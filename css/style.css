@@ -21,14 +21,20 @@ nav{
 }
 .menu-one,.menu-two{
   flex-direction: row;
-
 }
 .menu-one > li, .menu-two > li{
   display: inline-block;
   margin:0 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.menu-one > li:hover, .menu-two > li:hover{
+  color: 
 }
 .content div > ul li{
   list-style: none;
+  padding: 15px;
+  font-size: 18px;
 }
 .button{
   background-color: green;
@@ -38,14 +44,23 @@ nav{
   text-align:center;
 }
 .content{
-  height: 150px;
-  background-color: black;
   position: absolute;
   display: none;
-
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #ccc;
+  background-color: #fff;
+}
+.menu-two li:first-child .content{
+  right: 130px;
+}
+.menu-two li:first-child .content div{
+  height: 300px;
 }
 .content div{
-  background-color: yellow;
-  border: 1px solid black;
-  display: inline-block;
+  float: left;
+  width: 200px;
+}
+.subtitle{
+  text-transform: uppercase;
 }

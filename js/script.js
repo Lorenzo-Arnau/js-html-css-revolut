@@ -6,10 +6,7 @@ $('.menu-two li').click(function(){
 $('.menu-two li').hover(function(){
 $( this ).find( ".content" ).toggle();
 },function(){
-$( this ).find( ".content" ).toggle();  
+$( this ).find( ".content" ).toggle();
 });
-
-
-
 
 })
