@@ -7,15 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/script.js" charset="utf-8"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <!-- contenitore navbar -->
-  <header>
+  <header class="shadow flex">
     <!-- navbar contenente menu -->
-    <nav>
+    <nav class="flex">
       <!-- menu uno -->
       <ul class="menu-one">
         <li> <img src="img/logo.png" alt=""> </li>
@@ -24,8 +24,10 @@
       </ul>
       <!-- menu due -->
       <ul  class="menu-two">
+      <!-- creo le voci del menu con le relative funzioni -->
         <li>Features
-         <div class="content">
+          <!-- creo internamente a ogni voce un contenuto nascosto che si visualizzerà solo in hover o al click jquery -->
+         <div class="content shadow">
            <div>
              <ul>
                <li class="subtitle"><i class="fa fa-university" aria-hidden="true"></i>
@@ -69,7 +71,7 @@
          </div>
         </li>
         <li>Plans
-          <div class="content">
+          <div class="content shadow">
             <div>
               <ul>
                 <li>Standard</li>
@@ -82,7 +84,7 @@
           </div>
         </li>
         <li>About Us
-          <div class="content">
+          <div class="content shadow">
             <div>
               <ul>
                 <li>About us</li>
@@ -100,7 +102,7 @@
           </div>
         </li>
         <li>Help
-          <div class="content">
+          <div class="content shadow">
             <div>
               <ul>
                 <li>Help centre</li>
@@ -115,10 +117,10 @@
         <li><div class="button">Sing-in</div></li>
         <li><div class="button">Get The app</div></li>
       </ul>
-
     </nav>
-
+    <!-- fine della navbar con menu interattivi -->
   </header>
 
   </body>
 </html>
+<!-- // End version checked =^-^= -->

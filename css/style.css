@@ -1,14 +1,23 @@
+/* default reset */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
+/* /default reset */
+
+/* utility class */
+  .shadow{
+    box-shadow: 1px 1px 1px #ccc;
+  }
+  .flex{
+    display: flex;
+  }
+/* utility class */
 header{
   width: 100%;
   height: 200px;
-  display: flex;
-  box-shadow: 1px 1px 1px #ccc;
 }
 nav{
   width: 80%;
@@ -16,7 +25,6 @@ nav{
   height: 50px;
   align-self: center;
   align-items: center;
-  display: flex;
   justify-content: space-between;
 }
 .menu-one,.menu-two{
@@ -25,19 +33,22 @@ nav{
 .menu-one > li, .menu-two > li{
   display: inline-block;
   margin:0 15px;
-  color: #1E1E20;
+  color: #6E7075;
   font-weight: bold;
   cursor: pointer;
 }
 .menu-one > li:hover, .menu-two > li:hover{
   color:#000;
 }
+.content li:hover{
+  transform: scale(1.1);
+}
 .menu-one img{
   height: 25px;
   vertical-align: middle;
 }
-.menu-one li:nth-child(3){
-  color: #6E7075;
+.menu-one li:nth-child(2){
+  color: #000;
 }
 .content div > ul li{
   list-style: none;
@@ -48,7 +59,7 @@ nav{
 .button{
   background-color: #F0F0F0;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
   text-align:center;
 }
 .menu-two li:nth-child(6) .button{
@@ -60,7 +71,6 @@ nav{
   display: none;
   border: 1px solid #eee;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px #ccc;
   background-color: #fff;
 }
 .menu-two li:first-child .content{
@@ -77,9 +87,11 @@ nav{
   text-transform: uppercase;
   color: #CFD3D6;
 }
+
 .subtitle i{
   background-color: #CFD3D6;
   padding: 5px;
   border-radius: 50%;
   color: #fff;
 }
+/* // End version checked =^-^= */

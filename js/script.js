@@ -10,3 +10,4 @@ $( this ).find( ".content" ).toggle();
 });
 
 })
+// End version checked =^-^=
