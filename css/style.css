@@ -23,9 +23,12 @@ nav{
   flex-direction: row;
 
 }
-li{
+.menu-one > li, .menu-two > li{
   display: inline-block;
   margin:0 15px;
+}
+.content div > ul li{
+  list-style: none;
 }
 .button{
   background-color: green;
@@ -42,7 +45,6 @@ li{
 
 }
 .content div{
-  width: 50px;
   background-color: yellow;
   border: 1px solid black;
   display: inline-block;
