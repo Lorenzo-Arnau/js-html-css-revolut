@@ -35,8 +35,15 @@ li{
   text-align:center;
 }
 .content{
-  width: 100px;
   height: 150px;
   background-color: black;
   position: absolute;
+  display: none;
+
+}
+.content div{
+  width: 50px;
+  background-color: yellow;
+  border: 1px solid black;
+  display: inline-block;
 }
